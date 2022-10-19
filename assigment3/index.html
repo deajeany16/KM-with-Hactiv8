@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Data Tracker</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">COVID-19 TRACKER</h2>
+                <div class="d-flex justify-content-center inpt">
+                    <input type="text" placeholder="Country" id="cntry">
+                    <button class="btn btn-primary" onclick="getdataCovid()">Get Data</button>
+                </div>
+                <br>
+                <h4 id="country">-</h4>
+                <p id="days">-</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="active.png" alt="" class="card-img-top actv mx-auto">
+                        <h4 class="card-title">Active Cases</h4>
+                        <h2 class="card-text" id="active">0</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="new cases.png" alt="" class="card-img-top mx-auto">
+                        <h4 class="card-title">New Cases</h4>
+                        <h2 class="card-text" id="neww">0</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="recovered.png" alt="" class="card-img-top mx-auto">
+                        <h4 class="card-title">Recovered Cases</h4>
+                        <h2 class="card-text" id="recovered">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="total.png" alt="" class="card-img-top mx-auto">
+                        <h4 class="card-title">Total Cases</h4>
+                        <h2 class="card-text" id="total">0</h2>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="rip.png" alt="" class="card-img-top mx-auto">
+                        <h4 class="card-title">Total Deaths</h4>
+                        <h2 class="card-text" id="rip">0</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="test.png" alt="" class="card-img-top mx-auto">
+                        <h4 class="card-title">Total Tests</h4>
+                        <h2 class="card-text" id="test">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
